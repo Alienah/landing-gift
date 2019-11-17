@@ -1,0 +1,190 @@
+* {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section__container {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.section__container > * {
+  margin: 0;
+  padding: 32px;
+}
+
+.section__container > span, .section__container h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.section__1 {
+  background-color: #000;
+}
+.section__2 {
+  background-image: url(./images/rob.jpg);
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  justify-content: flex-end;
+}
+
+.section__2 .section__2--title {
+  color: white;
+  padding-bottom: 40vh;
+  text-shadow: 0 5px 20px white;
+}
+.section__3 {
+  background-color: #5e5eba;
+}
+
+.section__3--title {
+  color: white;
+}
+.section__4 {
+  background-image: url(./images/light.jpg);
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+}
+
+.section__4 * {
+  color: white;
+  text-shadow: 0 5px 20px white;
+}
+
+.section__4--text {
+  padding-bottom: 20%;
+}
+.section__5 {
+  background-image: url(./images/honey.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+}
+.section__5--text {
+  color: white;
+  text-shadow: 0 5px 20px white;
+}
+
+.section__5--title {
+  padding-bottom: 20%;
+  color: white;
+  text-shadow: 0 5px 20px white;
+}
+
+.section__6 {
+  background-color: black;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.section__6 h2 {
+  padding-top: 10%;
+}
+
+.section__6--image {
+  height: 40vh;
+  width: 90%;
+  background-image: url(./images/white-cruise.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 16px;
+}
+
+
+[class^="ico"] {
+  position: absolute;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon-down img {
+  height: 48px;
+  width: 48px;
+}
+.icon-up img {
+  height: 32px;
+  width: 32px;
+}
+
+.icon-down {  
+  bottom: 0;
+  padding-bottom: 16px;
+}
+
+.icon-up {
+  top: 0;
+  right: 0;
+  padding: 16px;
+}
+
+.icon-up span {
+  color: white;
+}
+
+.section__1 h1, 
+.section__6 h2 {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+@media (min-width: 968px) {
+
+  .section__4--text,
+  .section__5--title {
+    padding-bottom: 10%;
+  }
+  .section__6 {
+    justify-content: space-between;
+  }
+
+  .section__6 h2 {
+    padding-top: 5%;
+  }
+
+  .section__6--image {
+    height: 60vh;
+    width: 80%;
+    margin-bottom: 32px;
+  }
+}
